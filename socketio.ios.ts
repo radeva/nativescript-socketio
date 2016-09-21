@@ -46,7 +46,7 @@ export class SocketIO {
 
                 // Create Socket
                 if (parseInt(device.osVersion) >= 10) {
-					this.socket = SocketIOClient.new().initWithSocketURLConfig(
+					this.socket = SocketIOClient.alloc().initWithSocketURLConfig(
 						NSURL.URLWithString(args[0]),
 						opts
 					);
