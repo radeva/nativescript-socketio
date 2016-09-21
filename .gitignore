@@ -1,6 +1,7 @@
 *.js
 *.js.map
 *.log
+*.sublime-project
 .vscode/*
 demo/app/*.js
 demo/app/*.js.map

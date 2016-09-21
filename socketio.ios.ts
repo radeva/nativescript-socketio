@@ -1,3 +1,5 @@
+import {device} from "platform"
+
 declare var SocketIOClient;
 declare var SocketAckEmitter;
 
@@ -43,10 +45,17 @@ export class SocketIO {
                 const opts = NSDictionary.dictionaryWithObjectsForKeys(valuesNS, keysNS);
 
                 // Create Socket
-                this.socket = SocketIOClient.alloc().initWithSocketURLOptions(
-                    NSURL.URLWithString(args[0]),
-                    opts
-                );
+                if (parseInt(device.osVersion) >= 10) {
+					this.socket = SocketIOClient.new().initWithSocketURLConfig(
+						NSURL.URLWithString(args[0]),
+						opts
+					);
+                } else {
+					this.socket = SocketIOClient.alloc().initWithSocketURLOptions(
+						NSURL.URLWithString(args[0]),
+						opts
+					);
+                }
                 break;
 
             case 3:
