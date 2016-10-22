@@ -1,6 +1,6 @@
 {
   "name": "nativescript-socketio",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "Socket.IO for nativescript",
   "main": "socketio.js",
   "nativescript": {
@@ -22,11 +22,16 @@
     "url": "https://github.com/triniwiz/nativescript-socketio.git"
   },
   "keywords": [
+    "nativescript",
+    "ecosystem:nativescript",
+    "nativescript-android",
+    "nativescript-ios"
     "NativeScript",
     "JavaScript",
     "Android",
     "IOS",
     "socket.io",
+    "socketio",
     "io",
     "socket",
     "events",
@@ -45,6 +50,10 @@
       "name": "Don Burgess",
       "url": "https://github.com/db3dev",
       "email": "don@db3dev.com"
+    },{
+      "name": "Robert Laverty",
+      "url": "https://github.com/roblav96",
+      "email": "roblav96@gmail.com"
     }
   ],
   "bugs": {
