@@ -1,6 +1,6 @@
 {
   "name": "nativescript-socketio",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "Socket.IO for nativescript",
   "main": "socketio.js",
   "nativescript": {
@@ -25,7 +25,7 @@
     "nativescript",
     "ecosystem:nativescript",
     "nativescript-android",
-    "nativescript-ios"
+    "nativescript-ios",
     "NativeScript",
     "JavaScript",
     "Android",
