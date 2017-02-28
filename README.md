@@ -2,15 +2,29 @@
 [![npm](https://img.shields.io/npm/dt/nativescript-socketio.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-socketio)
 # nativescript-socketio
 # Usage
+
 ```
 npm install nativescript-socketio
 ```
+
+or
+
+```
+tns plugin add nativescript-socketio
+```
+
 Set connection string and options then connect
 
 ```js
-var SocketIO = require('nativescript-socketio');
-var socketIO = new SocketIO(url,opts);
+var SocketIO = require('nativescript-socketio').SocketIO; 
+var socketIO = new SocketIO(url, opts);
 ```
+Alternatively:
+```js
+import { SocketIO } from 'nativescript-socketio';
+var socketIO = new SocketIO(url, opts);
+```
+
 Connect to server
 ```js
 socketIO.connect()
