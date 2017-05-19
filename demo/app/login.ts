@@ -1,11 +1,12 @@
-import {Observable} from 'data/observable';
+import {Observable, fromObject} from 'data/observable';
 import {SocketIO} from 'nativescript-socketio';
 import {} from 'ui/page';
 import frameModule = require('ui/frame');
 let socketIO;
-const server = 'http://192.168.1.135:3001'; //using genymotion
+//const server = 'http://10.0.2.2:3001'; //using android emulator
+const server = 'http://localhost:3001'; //using ios simulator
 
-let pageData = new Observable({
+let pageData = fromObject({
   item: '',
   username: 'Osei'
 });

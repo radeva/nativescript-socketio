@@ -104,8 +104,8 @@ export class SocketIO {
         // Send Emit
         if (ack) {
 
-            const emit = this.socket.emitWithAckWithItems(event, payload)
-            emit(0, (args) => {
+            const emit = this.socket.emitWithAckWith(event, payload)
+            emit.timingOutAfterCallback(0, (args) => {
 
                 // Convert Arguments to JS Array from NSArray
                 const marshalledArgs = [];
@@ -120,7 +120,7 @@ export class SocketIO {
         }
         else {
             // Emit without Ack Callback
-            this.socket.emitWithItems(event, payload);
+            this.socket.emitWith(event, payload);
         }
 
     }

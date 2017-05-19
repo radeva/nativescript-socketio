@@ -1,12 +1,12 @@
 {
   "name": "nativescript-socketio",
-  "version": "2.3.1",
+  "version": "3.0.0",
   "description": "Socket.IO for nativescript",
   "main": "socketio",
   "nativescript": {
     "platforms": {
-      "android": "1.6.0",
-      "ios": "1.6.0"
+      "android": "3.0.0",
+      "ios": "3.0.0"
     }
   },
   "scripts": {
@@ -62,9 +62,12 @@
   "license": "MIT",
   "homepage": "https://github.com/triniwiz/nativescript-socketio",
   "readmeFilename": "README.md",
+  "peerDependencies": {
+    "tns-core-modules": "^3.0.0 || ^3.0.0-rc.1"
+  },
   "devDependencies": {
-     "tns-core-modules": "^2.2.0",
-    "tns-platform-declarations": "^2.2.0",
-    "typescript": "^1.8.7"
+    "tns-core-modules": "^3.0.0 || ^3.0.0-rc.1",
+    "tns-platform-declarations": "^3.0.0 || ^3.0.0-rc.1",
+    "typescript": "^2.2.2"
   }
 }
